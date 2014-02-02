@@ -3,7 +3,7 @@
 <html>
 <head>
 <!-- START_HIGHLIGHT -->
-  <title>Pragprog Books Online Store</title>
+  <title>Test Environment</title>
 <!-- END_HIGHLIGHT -->
   <!-- <label id="code.slt"/> --><%= stylesheet_link_tag    "application", media: "all",
     "data-turbolinks-track" => true %>
@@ -15,7 +15,7 @@
 <!-- START_HIGHLIGHT -->
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %><!-- <label id="code.depot.e.title"/> -->
+    <%= @page_title || "Test Environment" %><!-- <label id="code.depot.e.title"/> -->
   </div>
   <div id="columns">
     <div id="side">
@@ -29,9 +29,11 @@
     <div id="main">
 <!-- END_HIGHLIGHT -->
       <%= yield %><!-- <label id="code.depot.e.include"/> -->
+
 <!-- START_HIGHLIGHT -->
     </div>
   </div>
 <!-- END_HIGHLIGHT -->
+		Page Last Updated: <%= Time.now.strftime("%m/%d/%Y") %>
 </body>
 </html>
