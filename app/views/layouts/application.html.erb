@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 <!-- START:head -->
 <!DOCTYPE html>
 <html>
 <head>
 <!-- START_HIGHLIGHT -->
-  <title>Test Environment</title>
+  <title>Pragprog Books Online Store</title>
 <!-- END_HIGHLIGHT -->
   <!-- <label id="code.slt"/> --><%= stylesheet_link_tag    "application", media: "all",
     "data-turbolinks-track" => true %>
@@ -16,7 +15,7 @@
 <!-- START_HIGHLIGHT -->
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Test Environment" %><!-- <label id="code.depot.e.title"/> -->
+    <%= @page_title || "Pragmatic Bookshelf" %><!-- <label id="code.depot.e.title"/> -->
   </div>
   <div id="columns">
     <div id="side">
@@ -30,25 +29,9 @@
     <div id="main">
 <!-- END_HIGHLIGHT -->
       <%= yield %><!-- <label id="code.depot.e.include"/> -->
-
 <!-- START_HIGHLIGHT -->
     </div>
   </div>
 <!-- END_HIGHLIGHT -->
-		Page Last Updated: <%= Time.now.strftime("%m/%d/%Y") %>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Dep</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body class='<%= controller.controller_name %>' >
-
-<%= yield %>
-
->>>>>>> 557a8199dd6b6f04a914f5f1f95a5be42282abe4
 </body>
 </html>
